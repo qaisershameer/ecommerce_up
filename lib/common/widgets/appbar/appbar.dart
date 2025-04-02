@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../utils/constants/colors.dart';
@@ -9,7 +9,12 @@ import '../../../utils/helpers/helper_functions.dart';
 
 class UAppBar extends StatelessWidget implements PreferredSizeWidget {
   const UAppBar(
-      {super.key, this.title, this.showBackArrow = false, this.leadingIcon, this.actions, this.leadingOnPressed});
+      {super.key,
+      this.title,
+      this.showBackArrow = false,
+      this.leadingIcon,
+      this.actions,
+      this.leadingOnPressed});
 
   final Widget? title;
   final bool showBackArrow;
@@ -28,10 +33,14 @@ class UAppBar extends StatelessWidget implements PreferredSizeWidget {
 
         /// Leading
         leading: showBackArrow
-            ? IconButton(onPressed: Get.back, icon: Icon(Iconsax.arrow_left, color: dark ? UColors.white : UColors.dark))
+            ? IconButton(
+                onPressed: Get.back,
+                icon: Icon(Iconsax.arrow_left,
+                    color: dark ? UColors.white : UColors.dark))
             : leadingIcon != null
-            ? IconButton(onPressed: leadingOnPressed, icon: Icon(leadingIcon))
-            : null,
+                ? IconButton(
+                    onPressed: leadingOnPressed, icon: Icon(leadingIcon))
+                : null,
 
         /// Title
         title: title,

@@ -46,6 +46,7 @@ class UImages{
   static const String homeBanner3 = 'assets/banners/banner_3.jpg';
   static const String homeBanner4 = 'assets/banners/banner_4.jpg';
   static const String homeBanner5 = 'assets/banners/banner_5.jpg';
+  static const String homeBanner6 = 'assets/banners/banner_6.jpg';
 
 
   // -----[Products]-----
