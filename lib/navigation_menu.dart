@@ -5,7 +5,7 @@ import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
 
 import 'features/shop/screens/home/home.dart';
-// import 'features/shop/screens/store/store.dart';
+import 'features/shop/screens/store/store.dart';
 // import 'features/shop/screens/wishlist/wishlist.dart';
 // import 'features/personalization/screens/profile/profile.dart';
 
@@ -50,7 +50,7 @@ class NavigationController extends GetxController {
   // List<Widget> screens = [HomeScreen(), StoreScreen(), WishlistScreen(), ProfileScreen()];
   List<Widget> screens = [
     HomeScreen(),
-    Container(color: Colors.red),
+    StoreScreen(),
     Container(color: Colors.yellow),
     Container(color: Colors.deepPurple)
   ];

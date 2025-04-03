@@ -6,20 +6,22 @@ import '../../../../../utils/constants/colors.dart';
 
 class UPrimaryHeaderContainer extends StatelessWidget {
   const UPrimaryHeaderContainer({
-    super.key, required this.child,
+    super.key,
+    required this.child,
+    required this.height,
   });
 
   final Widget child;
+  final double height;
 
   @override
   Widget build(BuildContext context) {
     return URoundedEdgesContainer(
       child: Container(
-        height: USizes.homePrimaryHeaderHeight,
+        height: height,
         color: UColors.primary,
         child: Stack(
           children: [
-      
             /// Circular Container 01
             Positioned(
               top: -150,
@@ -27,10 +29,9 @@ class UPrimaryHeaderContainer extends StatelessWidget {
               child: UCircularContainer(
                   height: USizes.homePrimaryHeaderHeight,
                   width: USizes.homePrimaryHeaderHeight,
-                  backgroundColor: UColors.white.withValues(alpha: 0.1)
-              ),
+                  backgroundColor: UColors.white.withValues(alpha: 0.1)),
             ),
-      
+
             /// Circular Container 02
             Positioned(
                 top: 50,
@@ -38,17 +39,13 @@ class UPrimaryHeaderContainer extends StatelessWidget {
                 child: UCircularContainer(
                     height: USizes.homePrimaryHeaderHeight,
                     width: USizes.homePrimaryHeaderHeight,
-                    backgroundColor: UColors.white.withValues(alpha: 0.1)
-                )
-            ),
-      
+                    backgroundColor: UColors.white.withValues(alpha: 0.1))),
+
             /// Child
             child
-      
           ],
         ),
       ),
     );
   }
 }
-

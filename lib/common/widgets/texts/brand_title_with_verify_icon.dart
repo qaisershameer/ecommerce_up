@@ -28,7 +28,6 @@ class UBrandTitleWithVerifyIcon extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-
         /// Brand Title
         Flexible(
           child: UBrandTitleText(
