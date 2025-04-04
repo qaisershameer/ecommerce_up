@@ -6,8 +6,8 @@ import 'package:e_commerce/utils/helpers/helper_functions.dart';
 
 import 'features/shop/screens/home/home.dart';
 import 'features/shop/screens/store/store.dart';
-// import 'features/shop/screens/wishlist/wishlist.dart';
-// import 'features/personalization/screens/profile/profile.dart';
+import 'features/shop/screens/wishlist/wishlist.dart';
+import 'features/personalization/screens/profile/profile.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
@@ -47,11 +47,10 @@ class NavigationMenu extends StatelessWidget {
 class NavigationController extends GetxController {
   static NavigationController get instance => Get.find();
   RxInt selectedIndex = 0.obs;
-  // List<Widget> screens = [HomeScreen(), StoreScreen(), WishlistScreen(), ProfileScreen()];
   List<Widget> screens = [
     HomeScreen(),
     StoreScreen(),
-    Container(color: Colors.yellow),
-    Container(color: Colors.deepPurple)
+    WishlistScreen(),
+    ProfileScreen()
   ];
 }

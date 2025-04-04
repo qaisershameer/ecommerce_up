@@ -7,7 +7,7 @@ import 'package:e_commerce/features/shop/screens/store/widgets/store_primary_hea
 import '../../../../common/widgets/texts/section_heading.dart';
 
 class StoreScreen extends StatelessWidget {
-   const StoreScreen({super.key});
+  const StoreScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +44,9 @@ class StoreScreen extends StatelessWidget {
                                 itemCount: 10,
                                 shrinkWrap: true,
                                 scrollDirection: Axis.horizontal,
-                                itemBuilder: (context, index) => UBrandCard(),
+                                itemBuilder: (context, index) => SizedBox(
+                                    width: USizes.brandCardWidth,
+                                    child: UBrandCard()),
                                 separatorBuilder: (context, index) =>
                                     SizedBox(width: USizes.spaceBtwItems),
                               ),
@@ -77,5 +79,3 @@ class StoreScreen extends StatelessWidget {
     );
   }
 }
-
-

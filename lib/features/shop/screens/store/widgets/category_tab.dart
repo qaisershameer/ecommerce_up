@@ -49,7 +49,6 @@ class UCategoryTab extends StatelessWidget {
               ),
 
               SizedBox(height: USizes.spaceBtwSections)
-
             ],
           ),
         ),

@@ -1,7 +1,7 @@
-import 'circular_container.dart';
-import 'package:flutter/material.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/common/widgets/custom_shapes/rounded_edges_container.dart';
+import 'package:flutter/material.dart';
+import 'circular_container.dart';
+import 'rounded_edges_container.dart';
 import '../../../utils/constants/colors.dart';
 
 class UPrimaryHeaderContainer extends StatelessWidget {
@@ -13,6 +13,7 @@ class UPrimaryHeaderContainer extends StatelessWidget {
 
   final Widget child;
   final double height;
+
   @override
   Widget build(BuildContext context) {
     return URoundedEdgesContainer(
@@ -21,28 +22,24 @@ class UPrimaryHeaderContainer extends StatelessWidget {
         color: UColors.primary,
         child: Stack(
           children: [
-
-            /// Circular Container
+            /// Circular Container 01
             Positioned(
               top: -150,
               right: -160,
               child: UCircularContainer(
-                height: USizes.homePrimaryHeaderHeight,
-                width: USizes.homePrimaryHeaderHeight,
-                backgroundColor: UColors.white.withValues(alpha: 0.1)
-              ),
+                  height: USizes.homePrimaryHeaderHeight,
+                  width: USizes.homePrimaryHeaderHeight,
+                  backgroundColor: UColors.white.withValues(alpha: 0.1)),
             ),
 
-            /// Circular Container
+            /// Circular Container 02
             Positioned(
                 top: 50,
                 right: -250,
                 child: UCircularContainer(
-                  height: USizes.homePrimaryHeaderHeight,
-                  width: USizes.homePrimaryHeaderHeight,
-                  backgroundColor: UColors.white.withValues(alpha: 0.1),
-                )
-            ),
+                    height: USizes.homePrimaryHeaderHeight,
+                    width: USizes.homePrimaryHeaderHeight,
+                    backgroundColor: UColors.white.withValues(alpha: 0.1))),
 
             /// Child
             child
@@ -52,5 +49,3 @@ class UPrimaryHeaderContainer extends StatelessWidget {
     );
   }
 }
-
-
