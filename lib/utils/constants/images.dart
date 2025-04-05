@@ -202,18 +202,18 @@ class UImages{
   static const String productImage68 = 'assets/products/product 68.png';
 
   // Brands
-  static const String adidasLogo = 'assets/brands/bata.png';
-  static const String appleLogo = 'assets/brands/bata.png';
+  static const String adidasLogo = 'assets/brands/adidas.jpg';
+  static const String appleLogo = 'assets/brands/apple.jpg';
   static const String bataLogo = 'assets/brands/bata.png';
-  static const String bloodyLogo = 'assets/brands/bata.png';
-  static const String breakoutLogo = 'assets/brands/bata.png';
-  static const String dariMoochLogo = 'assets/brands/bata.png';
-  static const String hpLogo = 'assets/brands/bata.png';
-  static const String interWoodLogo = 'assets/brands/bata.png';
-  static const String jLogo = 'assets/brands/bata.png';
-  static const String nDURELogo = 'assets/brands/bata.png';
-  static const String nikeLogo = 'assets/brands/bata.png';
-  static const String northStarLogo = 'assets/brands/bata.png';
-  static const String poloLogo = 'assets/brands/bata.png';
+  static const String bloodyLogo = 'assets/brands/bloody.png';
+  static const String breakoutLogo = 'assets/brands/breakout.jpg';
+  static const String dariMoochLogo = 'assets/brands/dari_mooch.png';
+  static const String hpLogo = 'assets/brands/hp.jpg';
+  static const String interWoodLogo = 'assets/brands/interwood.jpeg';
+  static const String jLogo = 'assets/brands/j..png';
+  static const String nDURELogo = 'assets/brands/ndure.png';
+  static const String nikeLogo = 'assets/brands/nike.png';
+  static const String northStarLogo = 'assets/brands/north_star.jpg';
+  static const String poloLogo = 'assets/brands/polo.png';
 
 }

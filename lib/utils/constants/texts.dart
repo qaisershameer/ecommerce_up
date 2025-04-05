@@ -1,15 +1,17 @@
 class UTexts{
   UTexts._();
 
+  /// OnBoarding Titles
   static const String onBoardingTitle1 = 'Welcome to UP Store';
   static const String onBoardingTitle2 = 'Shop Everything You Love!';
   static const String onBoardingTitle3 = 'Fast & Reliable Delivery!';
 
+  /// OnBoarding Sub Titles
   static const String onBoardingSubTitle1 = 'Your one-stop destination for effortless and enjoyable shopping';
   static const String onBoardingSubTitle2 = 'Discover top-quality products at the best prices with a seamless shopping experience';
   static const String onBoardingSubTitle3 = 'Get your favorite items delivered to your doorstep, anytime, anywhere';
 
-  // Login Screen
+  /// Login Screen
   static const String loginTitle = 'Shop Smarter';
   static const String loginSubTitle = 'Log in to Access Exclusive Deals and Simplify Your Shopping Experience';
   static const String email = 'Email';
@@ -20,7 +22,7 @@ class UTexts{
   static const String createAccount = 'Create Account';
   static const String orSignInWith = 'Or Sign In With';
 
-  // SignUp Screen
+  /// SignUp Screen
   static const String signupTitle = 'Let’s Get You Registered';
   static const String firstName = 'First Name';
   static const String lastName = 'Last Name';
@@ -31,30 +33,41 @@ class UTexts{
   static const String termsOfUse = 'Terms of use';
   static const String orSignupWith = 'Or Sign up With';
 
-  // Forget Password Screen
+  /// Forget Password Screen
   static const String forgetPasswordTitle = 'Forget Password';
   static const String forgetPasswordSubTitle = 'No worries! Enter your registered email address, and we’ll help you reset your password';
   static const String submit = 'Submit';
 
-  // Reset Password Screen
+  /// Reset Password Screen
   static const String resetPasswordTitle = 'Password Reset Email Sent';
   static const String resetPasswordSubTitle = 'We’ve sent a password reset link to your email. Please check your inbox and follow the instructions to reset your password';
   static const String done = 'Done';
 
-  // Verify Email Screen
+  /// Verify Email Screen
   static const String verifyEmailTitle = 'Verify your email address!';
   static const String verifyEmailSubTitle = 'We’ve sent a verification link to your email. Please check your inbox and click the link to verify your account';
   static const String uContinue = 'Continue';
   static const String resendEmail = 'Resend Email';
 
-  // Account Created Successfully Screen
+  /// Account Created Successfully Screen
   static const String accountCreatedTitle = 'Your account successfully created';
   static const String accountCreatedSubTitle = 'Congratulations! Your account has been successfully created. You can now explore all the amazing features, start personalizing your experience, and enjoy seamless access to our services. Let’s get started!';
 
+  /// AppBar Tag Lines
   static const String homeAppBarTitle = 'Good Morning';
   static const String homeAppBarSubTitle = 'Unknown Pro';
   static const String searchBarTitle = 'Search in Store';
   static const String popularCategories = 'Popular Categories';
+
+  /// Profile Screen
+  static const String closeAccount = 'Close Account';
+
+  /// QR Dev Team
+  static const String qrdId = '7861-4498';
+  static const String qrdGender = 'Male';
+  static const String qrDevTeam = 'QR Dev Team';
+  static const String qrdPhone = '+92-334-6013608';
+  static const String qrdEmail = 'qrdevteam@gmail.com';
 
 
 

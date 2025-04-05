@@ -1,13 +1,13 @@
 name: e_commerce
-description: "A new Flutter project."
+description: "A Dart-Flutter eCommerce App using GetX State Management & Feature Based MVVM Architecture * Guided Project by UnknownPro."
 
 
-publish_to: 'none'
+publish_to: 'https:\\qrdpro.com'
 
-version: 1.0.0+1
+version: 2025.04.03+1
 
 environment:
-  sdk: ^3.6.0
+  sdk: ^3.5.0
 
   #--------[PACKAGES]------------
 dependencies:
@@ -39,13 +39,13 @@ flutter:
 
   #--------[ASSETS]------------
   assets:
-    - assets/animations/
-    - assets/banners/
-    - assets/brands/
-    - assets/icons/categories/
-    - assets/images/
     - assets/logo/
+    - assets/animations/
+    - assets/images/
+    - assets/icons/categories/
+    - assets/banners/
     - assets/products/
+    - assets/brands/
 
   #--------[FONTS]------------
   fonts:
