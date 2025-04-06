@@ -68,6 +68,8 @@ class UTexts{
   static const String qrDevTeam = 'QR Dev Team';
   static const String qrdPhone = '+92-334-6013608';
   static const String qrdEmail = 'qrdevteam@gmail.com';
+  static const String qrdAddress = 'Moza Wan Chattah Post Office Rangeel Pur, Multan +60000, Punjab Pakistan.';
+  static const String qaiser = 'Qaiser Shameer';
 
 
 
