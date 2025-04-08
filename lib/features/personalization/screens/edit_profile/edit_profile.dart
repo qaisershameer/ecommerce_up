@@ -32,6 +32,7 @@ class EditProfileScreen extends StatelessWidget {
 
               /// Divider
               Divider(),
+              SizedBox(height: USizes.spaceBtwItems),
 
               /// Account Settings Heading
               USectionHeading(title: 'Account Settings', showActionButton: false),
@@ -65,7 +66,7 @@ class EditProfileScreen extends StatelessWidget {
               /// Close Account Button
               TextButton(
                   onPressed: Get.back,
-                  child: Text(UTexts.closeAccount,style: TextStyle(color: Colors.red)))
+                  child: Text(UTexts.closeAccount, style: TextStyle(color: Colors.red, fontSize: 14)))
             ],
           ),
         ),

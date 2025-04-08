@@ -13,15 +13,14 @@ class UCartItems extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
-        separatorBuilder: (context, index) => SizedBox(height: USizes.spaceBtwItems / 4),
-        itemCount: 2,
-        shrinkWrap: true,
-        itemBuilder: (context, index) {
-          return Padding(
-            padding: UPadding.screenPadding,
-
-            child: Column(
+    return Padding(
+      padding: UPadding.screenPadding,
+      child: ListView.separated(
+          separatorBuilder: (context, index) => SizedBox(height: USizes.spaceBtwItems),
+          itemCount: 2,
+          shrinkWrap: true,
+          itemBuilder: (context, index) {
+            return Column(
               children: [
 
                 /// Cart Item
@@ -47,8 +46,8 @@ class UCartItems extends StatelessWidget {
                 ),
 
               ],
-            ),
-          );
-        });
+            );
+          }),
+    );
   }
 }

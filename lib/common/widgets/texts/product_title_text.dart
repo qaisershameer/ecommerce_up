@@ -17,10 +17,11 @@ class UProductTitleText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(title,
-        style: smallSize ? Theme.of(context).textTheme.labelLarge : Theme.of(context).textTheme.titleSmall,
+        style: smallSize
+            ? Theme.of(context).textTheme.labelLarge
+            : Theme.of(context).textTheme.titleSmall,
         maxLines: maxLines,
         textAlign: textAlign,
-      overflow: TextOverflow.ellipsis
-    );
+        overflow: TextOverflow.ellipsis);
   }
 }

@@ -63,7 +63,7 @@ class UProductCardVertical extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: USizes.spaceBtwItems / 2),
+            SizedBox(height: USizes.spaceBtwItemsHalf),
 
             /// Details
             Padding(
@@ -73,7 +73,7 @@ class UProductCardVertical extends StatelessWidget {
                 children: [
                   /// Product Title
                   UProductTitleText(title: 'Blue Bata Shoes', smallSize: true),
-                  SizedBox(height: USizes.spaceBtwItems / 2),
+                  SizedBox(height: USizes.spaceBtwItemsHalf),
 
                   /// Product Brand
                   UBrandTitleWithVerifyIcon(title: 'Bata'),

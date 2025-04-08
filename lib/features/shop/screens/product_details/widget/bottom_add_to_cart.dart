@@ -1,6 +1,7 @@
 import 'package:e_commerce/common/widgets/icons/circular_icon.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
+import 'package:e_commerce/utils/constants/texts.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -57,10 +58,10 @@ class UBottomAddToCart extends StatelessWidget {
                 children: [
                   /// Cart Button Icon
                   Icon(Iconsax.shopping_bag),
-                  SizedBox(width: USizes.spaceBtwItems / 2),
+                  SizedBox(width: USizes.spaceBtwItemsHalf),
 
                   /// Cart Button Text
-                  Text('Add to Cart'),
+                  Text(UTexts.addToCart),
                 ],
               ))
         ],

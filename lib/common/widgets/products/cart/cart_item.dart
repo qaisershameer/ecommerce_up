@@ -1,5 +1,5 @@
-import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:e_commerce/utils/helpers/helper_functions.dart';
 
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/images.dart';
@@ -16,7 +16,6 @@ class UCartItem extends StatelessWidget {
     final dark = UHelperFunctions.isDarkMode(context);
     return Row(
       children: [
-
         /// Product Image
         URoundedImage(
           imageUrl: UImages.productImage4a,
@@ -28,10 +27,10 @@ class UCartItem extends StatelessWidget {
         SizedBox(width: USizes.spaceBtwItems),
 
         /// Brand // Product Name // Variation
-        Expanded(child: Column(
+        Expanded(
+            child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
             /// Brand
             UBrandTitleWithVerifyIcon(title: 'iPhone'),
 
@@ -39,19 +38,18 @@ class UCartItem extends StatelessWidget {
             UProductTitleText(title: 'iPhone 16 Pro Max W'),
 
             /// Variation or Attributes
-            RichText(text: TextSpan(
-                children: [
+            RichText(
+                text: TextSpan(children: [
+              /// Color
+              TextSpan(text: 'Color ', style: Theme.of(context).textTheme.bodySmall),
+              TextSpan(text: 'Green ', style: Theme.of(context).textTheme.bodyLarge),
 
-                  /// Color
-                  TextSpan(text: 'Color ', style: Theme.of(context).textTheme.bodySmall),
-                  TextSpan(text: 'Green ', style: Theme.of(context).textTheme.bodyLarge),
+              /// Storage
+              TextSpan(text: 'Storage ', style: Theme.of(context).textTheme.bodySmall),
+              TextSpan(text: '512GB ', style: Theme.of(context).textTheme.bodyLarge),
 
-                  /// Storage
-                  TextSpan(text: 'Storage ', style: Theme.of(context).textTheme.bodySmall),
-                  TextSpan(text: '512GB ', style: Theme.of(context).textTheme.bodyLarge),
-
-                ]
-            ))
+            ])
+            )
           ],
         ))
       ],

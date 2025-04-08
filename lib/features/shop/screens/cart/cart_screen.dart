@@ -1,4 +1,5 @@
 import 'package:e_commerce/features/shop/screens/checkout/checkout.dart';
+import 'package:e_commerce/utils/constants/texts.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce/features/shop/screens/cart/widgets/cart_items.dart';
@@ -15,7 +16,7 @@ class CartScreen extends StatelessWidget {
       ///-----[AppBar]-----
       appBar: UAppBar(
           title:
-              Text('Cart', style: Theme.of(context).textTheme.headlineMedium),
+              Text(UTexts.cart, style: Theme.of(context).textTheme.headlineMedium),
           showBackArrow: true),
 
       ///-----[Body]-----
@@ -26,7 +27,7 @@ class CartScreen extends StatelessWidget {
         padding: const EdgeInsets.all(USizes.defaultSpace),
         child: UElevatedButton(
             onPressed: () => Get.to(() => CheckoutScreen()),
-            child: Text('Checkout \$ 12,345.67')),
+            child: Text('${UTexts.checkout} \$ 12,345.67')),
       ),
     );
   }

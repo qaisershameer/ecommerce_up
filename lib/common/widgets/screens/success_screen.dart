@@ -42,7 +42,7 @@ class SuccessScreen extends StatelessWidget {
               SizedBox(height: USizes.spaceBtwSections),
 
               /// Continue
-              UElevatedButton(onPressed: onTap, child: Text(UTexts.done))
+              UElevatedButton(onPressed: onTap, child: Text(UTexts.uContinue))
             ],
           ),
         ),

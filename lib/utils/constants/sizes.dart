@@ -1,3 +1,5 @@
+
+
 class USizes{
 // Padding and margin sizes
   static const double xs = 4.0; // extra small
@@ -29,6 +31,7 @@ class USizes{
   // Default spacing between sections
   static const double defaultSpace = 24.0;
   static const double spaceBtwItems = 16.0;
+  static const double spaceBtwItemsHalf = 8.0;
   static const double spaceBtwSections = 32.0;
 
   // Border radius

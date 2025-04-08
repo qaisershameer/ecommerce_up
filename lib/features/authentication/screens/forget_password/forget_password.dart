@@ -25,7 +25,7 @@ class ForgetPasswordScreen extends StatelessWidget {
               ///-----[Header]-----
               /// Title
               Text(UTexts.forgetPasswordTitle, style: Theme.of(context).textTheme.headlineMedium),
-              SizedBox(height: USizes.spaceBtwItems / 2),
+              SizedBox(height: USizes.spaceBtwItemsHalf),
 
               /// SubTitle
               Text(UTexts.forgetPasswordSubTitle, style: Theme.of(context).textTheme.bodySmall),

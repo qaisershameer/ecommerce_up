@@ -38,12 +38,12 @@ class USingleAddress extends StatelessWidget {
                   style: Theme.of(context).textTheme.titleLarge,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis),
-              SizedBox(height: USizes.spaceBtwItems / 2),
+              SizedBox(height: USizes.spaceBtwItemsHalf),
 
               /// User Phone Number
               Text(UTexts.qrdPhone,
                   maxLines: 1, overflow: TextOverflow.ellipsis),
-              SizedBox(height: USizes.spaceBtwItems / 2),
+              SizedBox(height: USizes.spaceBtwItemsHalf),
 
               /// User Address
               Text(UTexts.qrdAddress),

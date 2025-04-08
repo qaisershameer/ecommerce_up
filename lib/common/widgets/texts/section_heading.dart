@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
+import '../../../utils/constants/texts.dart';
+
 class USectionHeading extends StatelessWidget {
   const USectionHeading(
       {super.key,
       required this.title,
-      this.buttonTitle = 'View all',
+      this.buttonTitle = UTexts.viewAll,
       this.onPressed,
       this.showActionButton = true});
 

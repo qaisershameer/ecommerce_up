@@ -1,4 +1,6 @@
+import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import 'package:e_commerce/features/shop/screens/sub_category/sub_category.dart';
 import '../../../../../common/widgets/image_text/vertical_image_text.dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/images.dart';
@@ -30,11 +32,16 @@ class UHomeCategories extends StatelessWidget {
           SizedBox(
             height: 80,
             child: ListView.separated(
-              separatorBuilder: (context, index) => SizedBox(width: USizes.spaceBtwItems),
+              separatorBuilder: (context, index) =>
+                  SizedBox(width: USizes.spaceBtwItems),
               scrollDirection: Axis.horizontal,
               itemCount: 10,
               itemBuilder: (context, index) {
-                return UVerticalImageText(title: UTexts.popularCategories, image: UImages.sportsIcon, textColor: UColors.white);
+                return UVerticalImageText(
+                  onTap: () => Get.to(() => SubCategoryScreen()),
+                    title: 'Sports',
+                    image: UImages.sportsIcon,
+                    textColor: UColors.white);
               },
             ),
           )

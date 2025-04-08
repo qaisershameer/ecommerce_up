@@ -1,3 +1,5 @@
+import 'package:e_commerce/features/shop/screens/all_products/all_products.dart';
+import 'package:e_commerce/utils/constants/texts.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce/features/shop/screens/home/widgets/home_categories.dart';
@@ -73,8 +75,8 @@ class HomeScreen extends StatelessWidget {
 
               /// Section Heading
               USectionHeading(
-                title: 'Popular Products',
-                onPressed: () {},
+                title: UTexts.popularProducts,
+                onPressed: () => Get.to(() => ProductsScreen()),
               ),
               SizedBox(height: USizes.spaceBtwSections),
 
@@ -83,9 +85,8 @@ class HomeScreen extends StatelessWidget {
                   itemCount: 10,
                   itemBuilder: (context, index) {
                     return UProductCardVertical();
-                  },)
-
-
+                  }
+                  )
 
             ]),
           ),

@@ -1,3 +1,4 @@
+import 'package:e_commerce/utils/constants/texts.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,7 @@ class UPromoCodeField extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    final bool dark = UHelperFunctions.isDarkMode(context);
+    final dark = UHelperFunctions.isDarkMode(context);
     return URoundedContainer(
       showBorder: true,
       backgroundColor: Colors.transparent,
@@ -26,7 +27,7 @@ class UPromoCodeField extends StatelessWidget {
           Flexible(
             child: TextFormField(
               decoration: InputDecoration(
-                hintText: 'Have a promo code? Enter here ',
+                hintText: UTexts.promoHintText,
                 border: InputBorder.none,
                 disabledBorder: InputBorder.none,
                 enabledBorder: InputBorder.none,
@@ -43,7 +44,7 @@ class UPromoCodeField extends StatelessWidget {
                       foregroundColor: dark ? UColors.white.withValues(alpha: 0.5) : UColors.dark.withValues(alpha: 0.5),
                       side: BorderSide(color: Colors.grey.withValues(alpha: 0.1))
                   ),
-                  child: Text('Apply')))
+                  child: Text(UTexts.promoApply)))
         ],
       ),
     );

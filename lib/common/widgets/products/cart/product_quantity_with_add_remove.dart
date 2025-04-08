@@ -31,7 +31,7 @@ class UProductQuantityWithAddRemove extends StatelessWidget {
             icon: Iconsax.add,
             size: USizes.iconSm,
             color: UColors.primary,
-            backgroundColor: UColors.white)
+            backgroundColor: dark ? UColors.darkerGrey : UColors.light)
       ],
     );
   }

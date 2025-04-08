@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../common/widgets/chips/choice_chip.dart';
 import '../../../../../utils/constants/colors.dart';
+import '../../../../../utils/constants/texts.dart';
 
 class UProductAttributes extends StatelessWidget {
   const UProductAttributes({super.key});
@@ -30,10 +31,11 @@ class UProductAttributes extends StatelessWidget {
               children: [
 
                 /// [Text] - Variation Heading
-                USectionHeading(title: 'Variation', showActionButton: false),
+                USectionHeading(title: UTexts.variations, showActionButton: false),
                 SizedBox(width: USizes.spaceBtwItems),
 
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
 
                     /// Price // Sale Price // Actual Price
@@ -41,7 +43,7 @@ class UProductAttributes extends StatelessWidget {
                       children: [
 
                         /// [Text] - Price
-                        UProductTitleText(title: 'Price: ', smallSize: true),
+                        UProductTitleText(title: UTexts.price, smallSize: true),
 
                         /// Actual Price
                         Text('250', style: Theme.of(context).textTheme.titleSmall!.apply(decoration: TextDecoration.lineThrough)),
@@ -57,10 +59,10 @@ class UProductAttributes extends StatelessWidget {
                       children: [
 
                         /// [Text] - Stock
-                        UProductTitleText(title: 'Stock: ', smallSize: true),
+                        UProductTitleText(title: UTexts.stock, smallSize: true),
 
                         /// [Text] - In Stock
-                        Text('In Stock', style: Theme.of(context).textTheme.titleMedium),
+                        Text(UTexts.stockIn, style: Theme.of(context).textTheme.titleMedium),
                       ],
                     ),
                   ],
@@ -70,7 +72,7 @@ class UProductAttributes extends StatelessWidget {
             ),
 
             /// Attribute Description
-            UProductTitleText(title: 'This is a product of I-Phone 16 with 512 GB', smallSize: true, maxLines: 4,) ,
+            UProductTitleText(title: 'This is a product of iPhone 16 with 512 GB', smallSize: true, maxLines: 4,) ,
           ],
         )
           ),
@@ -83,7 +85,7 @@ class UProductAttributes extends StatelessWidget {
 
             /// [Text] - Colors
             USectionHeading(title: 'Colors', showActionButton: false),
-            SizedBox(height: USizes.spaceBtwItems / 2),
+            SizedBox(height: USizes.spaceBtwItemsHalf),
 
             /// ChoiceChip Round Circle Color
             Wrap(
@@ -100,7 +102,7 @@ class UProductAttributes extends StatelessWidget {
 
           ],
         ),
-        SizedBox(height: USizes.spaceBtwItems / 2),
+        SizedBox(height: USizes.spaceBtwItemsHalf),
 
         /// Attributes // Sizes // ChoiceChips Rectangle
         Column(
@@ -109,7 +111,7 @@ class UProductAttributes extends StatelessWidget {
 
             /// [Text] - Sizes
             USectionHeading(title: 'Sizes', showActionButton: false),
-            SizedBox(height: USizes.spaceBtwItems / 2),
+            SizedBox(height: USizes.spaceBtwItemsHalf),
 
             /// ChoiceChip Round Rectangle Size
             Wrap(

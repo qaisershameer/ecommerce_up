@@ -36,7 +36,7 @@ class UVerticalImageText extends StatelessWidget {
             padding: EdgeInsets.all(USizes.sm),
             child: Image(image: AssetImage(image), fit: BoxFit.cover),
           ),
-          SizedBox(height: USizes.spaceBtwItems / 2),
+          SizedBox(height: USizes.spaceBtwItemsHalf),
 
           /// Title
           SizedBox(

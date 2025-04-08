@@ -57,7 +57,10 @@ class UTexts{
   static const String homeAppBarTitle = 'Good Morning';
   static const String homeAppBarSubTitle = 'Unknown Pro';
   static const String searchBarTitle = 'Search in Store';
+  static const String popularBrands = 'Popular Brands';
   static const String popularCategories = 'Popular Categories';
+  static const String popularProducts = 'Popular Products';
+  static const String viewAll = 'View All';
 
   /// Profile Screen
   static const String closeAccount = 'Close Account';
@@ -68,9 +71,47 @@ class UTexts{
   static const String qrDevTeam = 'QR Dev Team';
   static const String qrdPhone = '+92-334-6013608';
   static const String qrdEmail = 'qrdevteam@gmail.com';
-  static const String qrdAddress = 'Moza Wan Chattah Post Office Rangeel Pur, Multan +60000, Punjab Pakistan.';
+  static const String qrdAddress = 'Moza Wan Chattah Post Office Rangeelpur, Multan +60000, Punjab Pakistan.';
   static const String qaiser = 'Qaiser Shameer';
 
+  /// Products
+  static const String variations = 'Variations';
+  static const String price = 'Price: ';
+  static const String stock = 'Stock: ';
+  static const String stockIn = 'Stock Available';
+  static const String stockOut = 'Out of Stock';
 
+  /// Cart
+  static const String cart = 'Cart';
+  static const String addToCart = 'Add to Cart';
+
+  /// Promo
+  static const String promoApply = 'Apply';
+  static const String promoHintText = 'Have a promo code? Enter here ';
+
+  /// Checkout
+  static const String checkout = 'Checkout';
+
+
+  /// Total
+  static const String subTotal = 'Sub Total';
+  static const String shippingFee = 'Shipping Fee';
+  static const String taxFee = 'Tax Fee';
+  static const String orderTotal = 'Order Total';
+
+  /// Billing
+  static const String billingAddress = 'Billing Address';
+  static const String processing = 'Processing';
+  static const String order = 'Order';
+  static const String orderValue = '7861-23456';
+  static const String dated = '01 Jan 2025';
+  static const String shippingDate = 'Shipping Date';
+
+  /// Payment Methods
+  static const String paymentMethod = 'Payment Methods';
+  static const String googlePay = 'Google Pay';
+  static const String change = 'Change';
+  static const String paymentSuccess = 'Payment Success!';
+  static const String itemShipped = 'Your item will be shipped soon!';
 
 }

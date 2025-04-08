@@ -1,12 +1,16 @@
-import 'package:e_commerce/features/personalization/screens/address/address.dart';
+import 'package:e_commerce/features/shop/screens/cart/cart_screen.dart';
+import 'package:e_commerce/features/shop/screens/order/order.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/common/widgets/texts/section_heading.dart';
-import 'package:e_commerce/features/personalization/screens/profile/widgets/settings_menu_tile.dart';
+import 'package:e_commerce/features/authentication/screens/login/login.dart';
+import 'package:e_commerce/features/personalization/screens/address/address.dart';
 import 'package:e_commerce/features/personalization/screens/profile/widgets/user_profile_tile.dart';
+import 'package:e_commerce/features/personalization/screens/profile/widgets/settings_menu_tile.dart';
 import 'package:e_commerce/features/personalization/screens/profile/widgets/profile_primary_header.dart';
-import 'package:iconsax/iconsax.dart';
+
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -50,14 +54,16 @@ class ProfileScreen extends StatelessWidget {
                       icon: Iconsax.shopping_cart,
                       title: 'My Cart',
                       subtitle: 'Add remove products to move checkout',
-                      onTap: () {}),
+                    onTap: () => Get.to(() => CartScreen()),
+                  ),
 
                   /// My Orders
                   SettingsMenuTile(
                       icon: Iconsax.bag_tick,
                       title: 'My Orders',
                       subtitle: 'In-progress and completed orders',
-                      onTap: () {}),
+                    onTap: () => Get.to(() => OrderScreen())
+                  ),
                   SizedBox(
                     height: USizes.spaceBtwSections,
                   ),
@@ -66,7 +72,7 @@ class ProfileScreen extends StatelessWidget {
                   SizedBox(
                     width: double.infinity,
                     child:
-                        OutlinedButton(onPressed: () {}, child: Text('Logout')),
+                        OutlinedButton(onPressed: () => Get.to(() => LoginScreen()), child: Text('Logout')),
                   ),
                   SizedBox(height: USizes.spaceBtwSections),
                 ],

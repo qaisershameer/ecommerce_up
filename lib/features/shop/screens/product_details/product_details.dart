@@ -1,13 +1,14 @@
+import 'package:e_commerce/features/shop/screens/cart/cart_screen.dart';
+import 'package:readmore/readmore.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:e_commerce/common/widgets/button/elevated_button.dart';
 import 'package:e_commerce/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce/features/shop/screens/product_details/widget/bottom_add_to_cart.dart';
 import 'package:e_commerce/features/shop/screens/product_details/widget/product_attributes.dart';
 import 'package:e_commerce/features/shop/screens/product_details/widget/product_meta_data.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:flutter/material.dart';
 import 'package:e_commerce/features/shop/screens/product_details/widget/product_thumbnail_and_slider.dart';
-import 'package:readmore/readmore.dart';
-
 import '../../../../common/style/padding.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
@@ -39,7 +40,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   SizedBox(height: USizes.spaceBtwSections),
 
                   /// Checkout
-                  UElevatedButton(onPressed: (){}, child: Text('Checkout')),
+                  UElevatedButton(onPressed: () => Get.to(() => CartScreen()), child: Text('Checkout')),
                   SizedBox(height: USizes.spaceBtwSections),
 
                   /// Description Heading
