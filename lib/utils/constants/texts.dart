@@ -33,6 +33,14 @@ class UTexts{
   static const String termsOfUse = 'Terms of use';
   static const String orSignupWith = 'Or Sign up With';
 
+  /// General
+  static const String loadingText = 'we are processing your information';
+  static const String noInternet = 'No Internet Connection';
+  static const String acceptPrivacy = 'Accept Privacy Policy';
+  static const String privacyMessage = 'In order to create account, you must have to read and accept the Privacy Policy & Terms of Use.';
+  static const String congrats = 'Congratulations!';
+  static const String createAccountMessage = 'Your account has been created! Verify email to continue.';
+
   /// Forget Password Screen
   static const String forgetPasswordTitle = 'Forget Password';
   static const String forgetPasswordSubTitle = 'No worries! Enter your registered email address, and we’ll help you reset your password';

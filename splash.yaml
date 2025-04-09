@@ -10,5 +10,4 @@ flutter_native_splash:
     image: assets/logo/black_app_logo.png
     image_dark: assets/logo/white_app_logo.png
 
-
   web: false

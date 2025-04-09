@@ -1,6 +1,8 @@
-import 'package:e_commerce/features/authentication/screens/signup/widgets/signup_form.dart';
-import 'package:e_commerce/utils/constants/texts.dart';
+import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import 'package:e_commerce/features/authentication/screens/signup/widgets/signup_form.dart';
+import 'package:e_commerce/features/authentication/controllers/signup/signup_controller.dart';
+import 'package:e_commerce/utils/constants/texts.dart';
 
 import '../../../../common/style/padding.dart';
 import '../../../../common/widgets/button/social_buttons.dart';
@@ -12,6 +14,7 @@ class SignUpScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(SignUpController());
     return Scaffold(
       appBar: AppBar(),
       body: SingleChildScrollView(

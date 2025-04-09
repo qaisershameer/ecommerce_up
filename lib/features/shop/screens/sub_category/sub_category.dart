@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:e_commerce/common/style/padding.dart';
 import 'package:e_commerce/common/widgets/texts/section_heading.dart';
-
 
 import '../../../../common/widgets/appbar/appbar.dart';
 import '../../../../common/widgets/products/product_cards/product_card_horizontal.dart';
@@ -13,7 +11,6 @@ class SubCategoryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = UHelperFunctions.isDarkMode(context);
     return Scaffold(
       ///-----[AppBar]-----
       appBar: UAppBar(
@@ -33,14 +30,16 @@ class SubCategoryScreen extends StatelessWidget {
 
               /// Horizontal Product Card
               SizedBox(
-                height: 120,
+                  height: 120,
                   child: ListView.separated(
-                    separatorBuilder: (context, index) => SizedBox(width: USizes.spaceBtwItemsHalf),
+                    separatorBuilder: (context, index) =>
+                        SizedBox(width: USizes.spaceBtwItemsHalf),
                     itemCount: 20,
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {
-                        return UProductCardHorizontal();
-                      },)),
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return UProductCardHorizontal();
+                    },
+                  )),
 
               /// Sub Category 02
               USectionHeading(title: 'Sports Kits', onPressed: () {}),
@@ -50,12 +49,14 @@ class SubCategoryScreen extends StatelessWidget {
               SizedBox(
                   height: 120,
                   child: ListView.separated(
-                    separatorBuilder: (context, index) => SizedBox(width: USizes.spaceBtwItemsHalf),
+                    separatorBuilder: (context, index) =>
+                        SizedBox(width: USizes.spaceBtwItemsHalf),
                     itemCount: 20,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       return UProductCardHorizontal();
-                    },)),
+                    },
+                  )),
 
               /// Sub Category 03
               USectionHeading(title: 'Sports Packs', onPressed: () {}),
@@ -65,13 +66,14 @@ class SubCategoryScreen extends StatelessWidget {
               SizedBox(
                   height: 120,
                   child: ListView.separated(
-                    separatorBuilder: (context, index) => SizedBox(width: USizes.spaceBtwItemsHalf),
+                    separatorBuilder: (context, index) =>
+                        SizedBox(width: USizes.spaceBtwItemsHalf),
                     itemCount: 20,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       return UProductCardHorizontal();
-                    },)),
-
+                    },
+                  )),
             ],
           ),
         ),
@@ -79,5 +81,3 @@ class SubCategoryScreen extends StatelessWidget {
     );
   }
 }
-
-

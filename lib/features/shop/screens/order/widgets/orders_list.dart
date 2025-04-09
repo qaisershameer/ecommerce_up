@@ -1,10 +1,10 @@
+import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:e_commerce/common/widgets/custom_shapes/rounded_container.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/constants/texts.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
-import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 class UOrdersListItems extends StatelessWidget {
   const UOrdersListItems({super.key});
@@ -13,7 +13,7 @@ class UOrdersListItems extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = UHelperFunctions.isDarkMode(context);
     return ListView.separated(
-      separatorBuilder: (context, index) => SizedBox(height: USizes.spaceBtwItems),
+      separatorBuilder: (context, index) => SizedBox(height: USizes.spaceBtwItemsHalf),
       itemCount: 20,
         itemBuilder: (context, index) {
           return URoundedContainer(
@@ -56,7 +56,7 @@ class UOrdersListItems extends StatelessWidget {
                         ))
                   ],
                 ),
-                SizedBox(height: USizes.spaceBtwItems),
+                SizedBox(height: USizes.spaceBtwItemsHalf),
 
                 /// 2nd - Row
                 Row(

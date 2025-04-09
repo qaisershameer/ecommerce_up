@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
-class UHelperFunctions {
+class UHelperFunctions{
   UHelperFunctions._();
 
   static Color? getColor(String value) {
-    /// Define your product specific colors here and it will match the attribute colors and show specific attribute
+    /// Define your product specific colors here and it will match the attribute colors and show specific 🟠🟡🟢🔵🟣🟤
 
     if (value == 'Green') {
+      return Colors.green;
+    } else if (value == 'Green') {
       return Colors.green;
     } else if (value == 'Red') {
       return Colors.red;
@@ -25,7 +27,7 @@ class UHelperFunctions {
     } else if (value == 'Yellow') {
       return Colors.yellow;
     } else if (value == 'Orange') {
-      return Colors.orange;
+      return Colors.deepOrange;
     } else if (value == 'Brown') {
       return Colors.brown;
     } else if (value == 'Teal') {
@@ -37,7 +39,9 @@ class UHelperFunctions {
     }
   }
 
+
   static bool isDarkMode(BuildContext context) {
     return Theme.of(context).brightness == Brightness.dark;
   }
+
 }

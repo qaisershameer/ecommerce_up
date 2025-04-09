@@ -25,7 +25,7 @@ class CheckoutScreen extends StatelessWidget {
       ///-----[AppBar]-----
       appBar: UAppBar(
           title: Text('Order Review',
-              style: Theme.of(context).textTheme.headlineMedium),
+              style: Theme.of(context).textTheme.headlineSmall),
           showBackArrow: true),
 
       ///-----[Body]-----
@@ -36,11 +36,11 @@ class CheckoutScreen extends StatelessWidget {
             children: [
               /// Cart Items
               UCartItems(showAddRemoveButtons: false),
-              SizedBox(height: USizes.spaceBtwSections),
+              // SizedBox(height: USizes.spaceBtwItemsHalf),
 
               /// Promo Code - Text Field with Button
               UPromoCodeField(),
-              SizedBox(height: USizes.spaceBtwSections),
+              SizedBox(height: USizes.spaceBtwItemsHalf),
 
               /// Billing Section
               URoundedContainer(
@@ -52,11 +52,11 @@ class CheckoutScreen extends StatelessWidget {
 
                     /// Amount
                     UBillingAmountSection(),
-                    SizedBox(height: USizes.spaceBtwItems),
+                    SizedBox(height: USizes.spaceBtwItemsHalf),
 
                     /// Payment
                     UBillingPaymentSection(),
-                    SizedBox(height: USizes.spaceBtwItems),
+                    SizedBox(height: USizes.spaceBtwItemsHalf),
 
                     /// Address
                     UBillingAddressSection(),

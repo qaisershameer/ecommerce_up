@@ -33,7 +33,7 @@ class UProductCardHorizontal extends StatelessWidget {
             height: 120,
             padding: EdgeInsets.all(USizes.sm),
             backgroundColor:
-            dark ? UColors.darkerGrey : UColors.light,
+            dark ? UColors.grey : UColors.light,
             child: Stack(
               children: [
                 /// Thumbnail
@@ -66,13 +66,14 @@ class UProductCardHorizontal extends StatelessWidget {
           SizedBox(
             width: 172.0,
             child: Padding(
-              padding: EdgeInsets.only(left: USizes.sm, top: USizes.sm, ),
+              padding: EdgeInsets.only(left: USizes.sm, top: USizes.sm),
               child:
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
 
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         /// Product Title
                         UProductTitleText(title: 'Blue Bata Shoes', smallSize: true),

@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 class UDeviceHelper{
   UDeviceHelper._();
 
+
   static void hideKeyboard(BuildContext context) {
     FocusScope.of(context).requestFocus(FocusNode());
   }

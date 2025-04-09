@@ -4,12 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:e_commerce/common/style/padding.dart';
 import 'package:e_commerce/common/widgets/brands/brand_card.dart';
 import 'package:e_commerce/common/widgets/layouts/grid_layout.dart';
-import 'package:e_commerce/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:e_commerce/common/widgets/texts/section_heading.dart';
-import 'package:e_commerce/utils/constants/keys.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/constants/texts.dart';
-import 'package:iconsax/iconsax.dart';
+
 
 import '../../../../common/widgets/appbar/appbar.dart';
 

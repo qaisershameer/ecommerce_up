@@ -5,7 +5,6 @@ import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../common/widgets/appbar/appbar.dart';
-import '../../../../utils/constants/texts.dart';
 
 class BrandProductsScreen extends StatelessWidget {
   const BrandProductsScreen({super.key});

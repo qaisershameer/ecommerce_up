@@ -30,7 +30,7 @@ class UProductQuantityWithAddRemove extends StatelessWidget {
         UCircularIcon(
             icon: Iconsax.add,
             size: USizes.iconSm,
-            color: UColors.primary,
+            color: dark ? UColors.white : UColors.primary,
             backgroundColor: dark ? UColors.darkerGrey : UColors.light)
       ],
     );
